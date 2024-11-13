@@ -1,0 +1,39 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let palabra =prompt("Ingrese palabra");
+        let nuevo=[]
+        const vocales=["a", "e", "i","o","u"];
+        /*for(let i=0;i<vocales.length;i++){
+            if (vocales[i]===palabra){
+                console.log(vocales[i]+" "+palabra+" son iguales");
+            }else{
+                console.log(vocales[i]+" "+palabra+" no son iguales");
+            }
+            //quiero saber que vocales contiene mi palabra:
+            
+        }*/
+        for (let j=0;j<palabra.length;j++){
+            for(let i=0;i<vocales.length;i++){
+                if (vocales[i]===palabra[j]){
+                    nuevo.push(vocales[i]);
+                //console.log("La palabra: "+palabra+" contiene la vocal "+vocales[i]);
+                }else{
+                //console.log("La palabra: "+palabra+" no contiene la vocal "+vocales[i]);
+                }
+            
+            }
+        }
+        nuevo.sort();
+        for(let i=0;i<nuevo.length;i++){
+            console.log(nuevo[i]);
+        }
+    </script>
+</body>
+</html>
